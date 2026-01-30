@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kanka Quiz - Kod Bilgin Ne Kadar?</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Quiz'e Hoşgeldin🚀</h1>
+
+    <div id="konu-secim" class="active">
+        <p>Hangi konuda quiz yapalım?</p>
+        <div class="konu-butonlari">
+            <button class="konu-btn" data-konu="html">HTML</button>
+            <button class="konu-btn" data-konu="css">CSS</button>
+            <button class="konu-btn" data-konu="js">JavaScript</button>
+        </div>
+    </div>
+
+    <div id="quiz" class="gizli">
+        <h2 id="soru"></h2>
+        <div id="secenekler"></div>
+        <button id="sonraki-btn" disabled>Sonraki Soru</button>
+    </div>
+
+    <div id="sonuc" class="gizli">
+        <h2>Sonuçlar Geldi!</h2>
+        <p id="puan-yazisi"></p>
+        <p id="yorum"></p>
+        <button id="tekrar-basla">Baştan Yapayım mı? 😄</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

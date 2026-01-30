@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çizim Tahtası</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="ana-kutu">
+    <canvas class="cizim-alani" width="750" height="650"></canvas>
+
+    <div class="araclar">
+        <div>
+            <div class="etiket">Renk Seç</div>
+            <input id="renk-secici" type="color" value="#000000">
+        </div>
+
+        <div id="silgi">Silgi</div>
+
+        <div>
+            <div class="etiket">Kalınlık</div>
+            <input id="kalinlik-ayari" type="range" min="1" max="30" value="5">
+        </div>
+
+        <div id="geri-al">Geri Al</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

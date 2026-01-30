@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+h1 {
+    margin-bottom: 1.8rem;
+    font-size: 2.4rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.15rem;
+    opacity: 0.95;
+}
+
+.konu-butonlari {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.konu-btn {
+    padding: 1.1rem 2rem;
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.konu-btn:hover {
+    background: rgba(255,255,255,0.35);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.active {
+    display: block;
+}
+
+.gizli {
+    display: none !important;
+}
+
+.secenek {
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.25s;
+}
+
+.secenek:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-3px);
+}
+
+.secenek.secili {
+    background: #4ade80;
+    border-color: #22c55e;
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.secenek.dogru {
+    background: #4ade80;
+    border-color: #22c55e;
+    color: #0f172a;
+}
+
+.secenek.yanlis {
+    background: #f87171;
+    border-color: #ef4444;
+}
+
+#sonraki-btn {
+    margin-top: 2rem;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#sonraki-btn:hover:not(:disabled) {
+    background: #4f46e5;
+    transform: scale(1.05);
+}
+
+#sonraki-btn:disabled {
+    background: #4b5563;
+    cursor: not-allowed;
+}
+
+#sonuc h2 {
+    margin-bottom: 1.5rem;
+}
+
+#puan-yazisi {
+    font-size: 2.8rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+#yorum {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+#tekrar-basla {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background: #fbbf24;
+    color: #1e293b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+#tekrar-basla:hover {
+    background: #f59e0b;
+    transform: scale(1.08);
+}
